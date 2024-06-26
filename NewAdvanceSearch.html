@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head lang="bg">
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="upper" style="justify-content: space-between;">
+        <div id="uppergooglelogo">
+            <a href="GoogleSearch.html">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="74" height="24">
+            </a>
+        </div>
+
+        <div id="innerupper">
+            <div class="dropdown">
+                <button type="button" class="dropbtn" ></button>
+                
+                <div class="dropdown-content">
+                    <a href="https://cats.com/homemade-cat-food-recipes"><img class="imglink" src="Totio1.png"></a>
+                    <a href="https://www.sadanduseless.com/cat-recipes/"><img class="imglink" src="Totio2.png" ></a>
+                    <a href="https://www.getsetpet.com/blogs/pet-portal/vet-approved-homemade-cat-food-recipes" ><img class="imglink" src="Totio3.png"></a>
+                    <a href="https://www.vietnamcoracle.com/cat-meat/"><img class="imglink" src="Totio4.png"></a>
+                </div>
+                    
+            </div>
+            <div class="prfl">
+                <button type="button" class="prflbtn"></button>
+                <div class="prfl-content">
+                    This is is an orange cat.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="advancetitle">
+        Разширено търсене
+    </div>
+
+    <div id="mainadvanceform">
+        <div class="formtitle">
+            <div id="formtitleleft">
+                Да се намерят страници със...
+            </div>
+            <div id="formtitleright">
+                За целта в полето за търсене:
+            </div>
+
+        </div>
+
+    </div>
+
+    <form action="https://www.google.com/search">
+    
+    <div id="firstpart">
+        <div class="formoneline">
+            <div class="first">всички тези думи:</div>
+            <div class="second"><input class="advsearch" type="text" name="as_q"></div>
+            <div class="third">Въведете важните думи: <span class="searchexamples">трицветен рат териер</span></div>
+        </div>
+
+        <div class="formoneline">
+            <div class="first">точно тази дума или фраза:</div>
+            <div class="second"><input class="advsearch" type="text" name="as_epq"></div>
+            <div class="third">Поставете точните думи в кавички: <span class="searchexamples">"рат териер"</span></div>
+        </div>
+
+        <div class="formoneline">
+            <div class="first">една от тези думи:</div>
+            <div class="second"><input class="advsearch" type="text" name="as_oq"></div>
+            <div class="third">Въведете <span class="searchexamples">OR</span> между всички думи, които искате: <br><span class="searchexamples">миниатюрни OR стандартни</span></div>
+        </div>
+
+        <div class="formoneline">
+            <div class="first">нито една от тези думи:</div>
+            <div class="second"><input class="advsearch" type="text" name="as_eq"></div>
+            <div class="third">Поставете знак минус непосредствено пред думите, които не искате: <span class="searchexamples">-гризач, -"Джак Ръсел"</span></div>
+        </div>
+
+        <div class="formoneline">
+            <div class="first">числа, вариращи от:</div>
+            <div class="second" style="display:flex; justify-content: space-evenly; align-items: baseline; margin-left:0px; margin-right:0px;" >
+                <input class="advsearch" type="text" style="width:242px" name="as_nlo">
+                <span style="font-family:Arial, Helvetica, sans-serif; font-size:13px; margin-left: 20px; margin-right: 20px;">до</span>
+                <input class="advsearch" type="text" style="width:242px;" name="as_nhi">
+            </div>
+            <div class="third">Поставете 2 точки между числата и добавете мерна единица: <br><span class="searchexamples">4..15 кг, 300..500 щ.д., 2010..2011 г.</span></div>
+        </div>
+
+    </div>
+
+    <div class="formtitle">
+        <div id="formtitleleft">
+            След това резултатите да се стеснят по...
+        </div>
+    </div>
+
+    <div id="selectmenus">
+        <div class="formselectmenus" style="align-items: baseline;">
+            <div class="one">език:</div>
+            <div class="two">
+                <select class="selectmenu">
+                    <option class="option">всички езици</option>
+                    <option class="option">английски</option>
+                    <option class="option">арабски</option>
+                    <option class="option">арменски</option>
+                </select>
+            </div>
+            <div class="three">Намерете страници на избрания от вас език.</div>
+        </div>
+
+        <div class="formselectmenus">
+            <div class="one">регион:</div>
+            <div class="two">
+                <select class="selectmenu">
+                    <option class="option">всички региони</option>
+                    <option class="option">Австралия</option>
+                    <option class="option">Австрия</option>
+                    <option class="option">Азербайджан</option>
+                </select>
+            </div>
+            <div class="three">Намерете страници, публикувани в определен регион.</div>
+        </div>
+
+        <div class="formselectmenus">
+            <div class="one">последна актуализация:</div>
+            <div class="two">
+                <select class="selectmenu">
+                    <option class="option">без значение</option>
+                    <option class="option">последните 24 часа</option>
+                    <option class="option">миналата седмица</option>
+                    <option class="option">миналия месец</option>
+                </select>
+            </div>
+            <div class="three">Намерете страници, актуализирани през посочения от вас период от време.</div>
+        </div>
+
+        <div class="formselectmenus" style="align-items: center; margin-bottom:24px;">
+            <div class="one">сайт или домейн</div>
+            <div class="two"><input class="advsearch" type="text" name="as_sitesearch"></div>
+            <div class="three">Търсете в един сайт (например <span class="searchexamples">wikipedia.org</span> ) или ограничете резултатите си до един домейн, като например <span class="searchexamples">.edu, .org или .gov</span></div>
+        </div>
+
+        <div class="formselectmenus">
+            <div class="one">думи, присъстващи във:</div>
+            <div class="two">
+                <select class="selectmenu">
+                    <option class="option">цялата страница</option>
+                    <option class="option">заглавието на страницата</option>
+                    <option class="option">текста на страницата</option>
+                    <option class="option">URL адреса на страницата</option>
+                </select>
+            </div>
+            <div class="three">Търсете думи в цялата страница, в заглавието й, в уеб адреса или във връзките към нея.</div>
+        </div>
+
+        <div class="formselectmenus">
+            <div class="one">файлов тип:</div>
+            <div class="two">
+                <select class="selectmenu">
+                    <option class="option">всички формати</option>
+                    <option class="option">PDF на Adobe Acrobat (.pdf)</option>
+                    <option class="option">PostScript на Adobe (.ps)</option>
+                    <option class="option">DWF на AutoDesk (.dwf)</option>
+                </select>
+            </div>
+            <div class="three">Намерете страници в предпочитания от вас формат.</div>
+        </div>
+
+        <div class="formselectmenus">
+            <div class="one" ><a href="https://support.google.com/websearch/answer/29508?hl=bg&visit_id=638549143160475905-3811190149&p=ws_images_usagerights&rd=1" style="color:blue" id="prava"> права за ползване:</a></div>
+            <div class="two">
+                <select class="selectmenu">
+                    <option class="option">неограничени от лиценз</option>
+                    <option class="option">безплатни за употреба или споделяне</option>
+                    <option class="option">безплатни за употреба или споделяне, дори с търговска цел</option>
+                    <option class="option">безплатни за употреба, споделяне или променяне</option>
+                </select>
+            </div>
+            <div class="three">Намерете страници, които можете да ползвате свободно.</div>
+        </div>
+    </div>
+
+    <div id="advsearchbutton">
+        <input id="advsearch" type="submit" value="Разширено търсене" name="tbs">
+    </div>
+
+    </form>
+
+</body>

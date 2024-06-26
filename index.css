@@ -1,0 +1,537 @@
+#searchbar {
+    width:582.33px; 
+    height: 45.99px; 
+    border-radius: 24px; 
+    position:relative; 
+    margin:auto; 
+    border: 1px solid #dfe1e5; 
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#searchbar input[type="text"] {
+    border-style: none; 
+    width:403.39px; 
+    height: 50px;
+    font-family: arial, sans-serif;
+    line-height: 50px;
+    background-color: transparent;
+    font-size: 18px;  
+}
+
+#searchbar input[type="text"]:focus {
+    outline : none;
+    background-color: transparent;
+}
+
+#magnifying {
+    margin-right: 15px;
+    position:relative;
+    margin-left:15px;
+    width:18px; 
+    height:18px;
+}
+
+#searchbutton {
+    text-align: center;
+    margin:auto
+   
+}
+
+#searchbutton input[type="submit"] {
+    margin-top: 30px; 
+    background-color: #f8f9fa; 
+    border: 1px solid #f8f9fa; 
+    border-radius: 4px;
+    color: #3c4043; 
+    font-size: 14px; 
+    padding-left: 16px;
+    padding-right: 16px; 
+    font-family: arial, sans-serif;
+    margin-right: 4px;
+    margin-left: 4px;
+    
+
+}
+
+#searchbutton input[type="submit"]:hover {
+    border-color: lightgrey;
+}
+
+.keyb {
+    display: flex;
+    width: min-content;
+    height: min-content;
+
+}
+
+.voicesearch {
+    display: flex;
+    width: min-content;
+    height: min-content;
+}
+
+#keyboard {
+    background-image: url("keyb.png");
+    background-size: cover;
+    border-style: none;
+    width:25px;
+    height: 25px;
+    background-color: transparent;
+    margin: 4px;
+}
+
+
+
+#keybpop {
+    display: none;
+    position: absolute;
+    width: 153px;
+    height: 97.5px;
+    top: 100%;
+    background-image: url("keybstock.jpg");
+    background-size: cover;
+    opacity: 0.4;
+    
+    text-align: center;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 12px;
+    
+}
+
+#voices {
+    display: none;
+    position: absolute;
+    top: 100%;
+    opacity: 0.4;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 12px;
+}
+
+.keyb:focus-within #keybpop {
+    display: flex;
+    position: absolute;
+    z-index:1;
+    align-items: center;
+    justify-content: center;
+}
+
+.voicesearch:focus-within #voices {
+    display: flex;
+    position: absolute;
+    z-index:1;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#voice {
+    background-image: url("voice_command.png");
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border-style: none;
+    margin: 15px;
+}
+
+#reverse {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    
+}
+
+#reverseimg {
+    width:35px;
+    height: 35px;
+}
+
+#upper {
+    display: flex;
+    height:70px;
+    color: black;
+    justify-content: flex-end;
+    
+}
+
+
+#tursene {
+    height:34.67px;
+    width: 136.43px;
+}
+
+#kusmet {
+    height:34.67px;
+    width: 184.78px;
+}
+
+a { 
+    color:#000;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+
+}
+
+#innerupper {
+    display:flex;
+    align-items: center;
+    height: 48px;
+    width: 260.66px;
+    justify-content: flex-end
+}
+
+#mainlogo {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+
+
+#imageslogo {
+   position: absolute;
+   left: 59%;
+   top: 27%;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   color: #4285f4;
+}
+
+#lupichka {
+    width: 32px;
+    height: 28px;
+    margin-right:10px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.dropbtn {
+    height: 35px;
+    width: 35px;
+    border-radius: 35px;
+    border-style: none;
+    background-color: transparent;
+    margin-left: 15px;
+    text-align: center;
+    background-image: url("appl_menu.png");
+    background-size: cover;
+}
+
+.dropbtn:hover {
+    background-color: #ecedee;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 288px;
+    height: min-content;
+    border-radius: 15px;
+    top: 100%;
+    border-width: 8px;
+    right: 1%;
+    }
+
+.dropdown:focus-within .dropdown-content {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    padding: auto;
+    margin: auto;
+    grid-column-gap: 10px;
+    /* flex-wrap: wrap; */
+    border-style: solid;
+    border-color: #ecedee;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,1);
+    position: asbolute;
+    /* justify-content: center; */
+    z-index: 1;
+   
+  }
+
+.imglink {
+    height: 55px;
+    width: 55px;
+    margin: 10px;
+    padding:5px;
+    
+}
+.imglink:hover {
+    background-color: #ecedee;
+    border-radius: 12px;
+}
+
+.prflbtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-left: 15px;
+    border-style:solid;
+    border-color:white;
+    background-image: url("profile_pic.jpg");
+    background-size: cover;
+    border-width: 4px;
+}
+
+.prflbtn:hover {
+    border-style: solid;
+    border-color: #ecedee;
+}
+
+.prfl-content {
+    display:none;
+    position: absolute;
+    width:300px;
+    height:300px;
+    border-style: solid;
+    border-color: #ecedee;
+    border-radius: 30px;
+    border-width:7px;
+    right: 5%;
+    z-index: 1;
+    background-image: url("profile_pic.jpg");
+    background-size:cover;
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    
+}
+
+.prfl:focus-within .prfl-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#uppergooglelogo {
+    display: flex;
+    justify-content: right;
+    width:min-content;
+    height: min-content;
+    margin: 15px;
+}
+
+#advancetitle {
+    color: #d93025;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-left: 37px;
+    padding-top: 14px;
+    padding-bottom: 22px;
+    border-bottom-style: solid;
+    border-bottom-color:gainsboro;
+    border-bottom-width: 0.25px;
+}
+
+
+.formtitle {
+    margin-top: 40px;
+    margin-left: 40px;
+    height: max-content;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#formtitleleft {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    font-size: 100%;
+}
+
+#formtitleright {
+    display:flex;
+    justify-content: right;
+    font-family: Arial, Helvetica, sans-serif;
+    color:gray;
+    font-size: 13px;
+    margin-right:276px;
+    margin-top:2px;
+    align-items: center;
+    height: 26.67px;
+    font-weight: bold;
+}
+
+.selectmenu {
+
+    margin-bottom: 17px;
+    height: 26px;
+    border-style:solid;
+    border-radius:0px;
+    border-width:0.5px;
+    border-color:lightgrey;
+    border-top-color:grey;
+    background-color:transparent;
+}
+
+
+.selectmenu {
+    background-color: rgb(237, 232, 232);
+    width:540px;
+    font-size:11px;
+    font-weight: bolder;
+}
+
+.selectmenu:focus {
+    background-color: lightgrey;
+    border-radius: 0px;
+    border-style:none;
+}
+
+.selectmenu:focus option{
+    border-style:none;
+}
+option{
+    background-color: white;
+    font-size:13px;
+    margin-bottom:5px;
+}
+
+.selectmenu:focus {
+    background-color: rgb(205, 198, 198);
+    box-shadow: 0 +0.5px 0px +1px rgb(199, 195, 195) inset;
+    outline: none;
+}
+
+
+@media (max-width: 999px) {
+    #formtitleleft {
+        width:112.78px;
+    }
+    #formtitleright, .third {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    #formtitleleft {
+        width:200px;
+    }
+    #formtitleright{
+        display: flex;
+    }
+}
+
+.formoneline, .formselectmenus {
+    display:flex;
+    flex-wrap: nowrap;
+    margin-bottom:20px;
+    align-items: center;
+}
+
+.formselectmenus {
+    align-items: baseline;
+    margin-bottom:12px;
+    
+}
+
+.first, .one {
+    display:flex;
+    justify-content: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px;
+    width:16%;
+    margin-left: 40px;
+}
+
+.second, .two {
+    width:540px;
+    
+}
+
+.second input, .two input {
+    width:100%;
+    height:24px;
+    border-radius: 2px;
+    border-width: 0.5px;
+    border-style:solid;
+    border-color: lightgrey;
+    border-top-color: rgb(199, 195, 195);
+}
+
+.second input[type="text"]:focus, .two input[type="text"]:focus {
+    outline: none;
+    border-color:rgb(94, 158, 238);
+    box-shadow: 0 +0.5px 0px +1px rgb(199, 195, 195) inset;
+}
+
+.searchexamples {
+    font-family: monospace;
+    font-size:11px;
+    color:gray;
+}
+
+.third, .three {
+    width:32%;
+    margin-left:30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;
+    color:darkslategray;
+}
+
+#firstpart {
+    border-bottom-style: solid;
+    border-bottom-color:gainsboro;
+    border-bottom-width: 0.25px;
+    padding-bottom: 20px;
+}
+
+#advsearchbutton {
+    display: flex;
+    margin-left: 640px;
+}
+
+#advsearch {
+    border-radius: 2px;
+    background-color:#4d90fe;
+    border-style: solid;
+    border-color:#3079ed;
+    border-width: 0.25px;;
+    color:white;
+    font-size:11px;
+    padding:10px;
+    font-weight: bolder;
+}
+
+#advsearchbutton input[type="submit"]:hover {
+    box-shadow: 0 +1px 20px +1px rgb(60, 120, 210) inset;
+}
+
+#prava:hover {
+    text-decoration: underline;
+}
+
+
+#refadvsearch {
+    margin-top:220px;
+    margin-left: 20px;
+    
+}
+
+#refadvs {
+    color:red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#refadvs:hover {
+    text-decoration: underline;
+}
